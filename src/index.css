@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
+@import url("https://fonts.googleapis.com/css2?family=Bellefair&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -9,11 +11,6 @@
 body {
   margin: 0;
   height: 100vh;
-  background-image: url(/public/assets/home/background-home-mobile.jpg);
-  min-height: 100vh;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
 }
 
 .wrapper {
@@ -22,13 +19,24 @@ body {
   max-width: 374px;
 }
 
+.mobile-bg-home {
+  min-height: 100vh;
+  background-image: url(/public/assets/home/background-home-mobile.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #d0d6f9;
+  text-align: center;
+  padding: 0 10px;
+}
+
 .mobile-explore-btn {
   height: 140px;
   width: 140px;
   border-radius: 50%;
   font-family: bellefair;
   background-color: #ffffff;
-  margin: 4rem auto 0;
+  margin: 5rem auto 0;
   letter-spacing: 1.25px;
   color: #0b0d17;
   display: grid;
@@ -39,4 +47,71 @@ body {
 .mobile-explore-btn:visited,
 .mobile-explore-btn:active {
   color: #0b0d17;
+}
+
+.destination-bg {
+  min-height: 100vh;
+  background-image: url(/public/assets/destination/background-destination-mobile.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #d0d6f9;
+  text-align: center;
+  padding: 0 10px;
+}
+.page-heading-id {
+  font-weight: bold;
+  font-size: 16px;
+  color: #4d4a4a99;
+}
+
+.page-heading {
+  letter-spacing: 2.7px;
+  font-family: "Barlow Condensed";
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.planet-image {
+  width: 170px;
+  height: 170px;
+}
+
+.destination-names {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 17px;
+  letter-spacing: 2.7px;
+  font-family: "Barlow Condensed";
+}
+
+.active-dest-name {
+  font-family: "Bellefair";
+  font-weight: lighter;
+  font-size: 56px;
+  color: #fff;
+  margin: 15px 0 10px;
+}
+
+.demaction-line {
+  height: 1px;
+  background-color: #383b4b;
+  margin: 2rem 0;
+}
+
+.distance-time-container {
+  margin-bottom: 2rem;
+}
+
+.travel-distance-time {
+  padding: 0;
+  font-size: 14px;
+  letter-spacing: 2.36px;
+  font-family: "Barlow Condensed";
+}
+.travel-distance-time-value {
+  font-size: 28px;
+  color: #fff;
+  font-family: "Bellefair";
 }

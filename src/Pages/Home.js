@@ -1,19 +1,11 @@
-import React from "react";
 import Navbar from "../components/navbar/Navbar";
 import { NavLink } from "react-router-dom";
 
 const Home = () => {
   return (
     <div className="wrapper">
-      <Navbar />
-      <div
-        style={{
-          color: "#D0D6F9",
-          textAlign: "center",
-          padding: "0 10px",
-          marginTop: "2rem",
-        }}
-      >
+      <div className="mobile-bg-home">
+        <Navbar />
         <p
           style={{
             letterSpacing: "2.7px",
@@ -34,6 +26,7 @@ const Home = () => {
         >
           SPACE
         </h1>
+
         <p
           style={{
             fontFamily: "Barlow",
@@ -45,11 +38,11 @@ const Home = () => {
           back, and relax because we’ll give you a truly out of this world
           experience!
         </p>
-      </div>
-      <div>
-        <NavLink to={"/destination"} className="mobile-explore-btn">
-          EXPLORE
-        </NavLink>
+        <div>
+          <NavLink to={"/destination"} className="mobile-explore-btn">
+            EXPLORE
+          </NavLink>
+        </div>
       </div>
     </div>
   );
