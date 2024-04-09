@@ -35,7 +35,6 @@ const Destination = () => {
       travel: clickedDestination.travel,
     });
   };
-  console.log(active);
 
   return (
     <div className="wrapper">
