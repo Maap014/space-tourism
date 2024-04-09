@@ -6,6 +6,12 @@ nav {
   position: sticky;
   top: 0;
 }
+
+.logo {
+  width: 40px;
+  height: 40px;
+}
+
 nav ul {
   display: none;
 }
@@ -28,22 +34,25 @@ nav ul.open {
 }
 
 nav li {
-  /* margin: 1rem 0 1.5rem 0; */
   list-style: none;
   padding: 15px;
-  /* text-align: center;
-  position: relative; */
 }
 
 nav li a,
 span {
   text-decoration: none;
-  font-size: 1.3rem;
-  font-weight: 300;
   color: #fff;
   padding: 1rem 0;
 }
-span {
+
+.nav-page,
+li a > span {
+  letter-spacing: 2.7px;
+  font-family: "Barlow Condensed";
+  font-weight: normal;
+}
+li a > span {
+  font-weight: bold;
   padding-right: 5px;
 }
 

@@ -19,7 +19,10 @@ body {
   max-width: 374px;
 }
 
-.mobile-bg-home {
+.mobile-bg-home,
+.destination-bg,
+.crew-bg,
+.technology-bg {
   min-height: 100vh;
   background-image: url(/public/assets/home/background-home-mobile.jpg);
   background-repeat: no-repeat;
@@ -52,17 +55,12 @@ body {
 .destination-bg {
   min-height: 100vh;
   background-image: url(/public/assets/destination/background-destination-mobile.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  color: #d0d6f9;
-  text-align: center;
-  padding: 0 10px;
 }
 .page-heading-id {
   font-weight: bold;
   font-size: 16px;
-  color: #4d4a4a99;
+  color: #d9d9d94f;
+  margin-right: 10px;
 }
 
 .page-heading {
@@ -114,4 +112,40 @@ body {
   font-size: 28px;
   color: #fff;
   font-family: "Bellefair";
+}
+
+/* CREW */
+.crew-bg {
+  min-height: 100vh;
+  background-image: url(/public/assets/crew/background-crew-mobile.jpg);
+}
+
+.crew-role,
+.crew-name {
+  font-family: "Bellefair";
+  font-weight: lighter;
+  color: #d9d9d9ab;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.crew-name {
+  font-size: 24px;
+  color: #d9d9d9;
+  margin-bottom: 15px;
+}
+
+.crew-bio {
+  font-family: "Barlow";
+  font-size: 15px;
+  font-weight: lighter;
+  line-height: 25px;
+  color: #d0d6f9;
+}
+
+/* Technology */
+
+.technology-bg {
+  min-height: 100vh;
+  background-image: url(/public/assets/technology/background-technology-mobile.jpg);
 }

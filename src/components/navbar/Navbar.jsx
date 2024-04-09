@@ -3,7 +3,7 @@ import "./NavbarStyles.css";
 import { NavLink, useLocation } from "react-router-dom";
 
 const Navbar = () => {
-  const [openHambuger, setHamburger] = useState(false);
+  const [openHamburger, setHamburger] = useState(false);
   const [active, setActive] = useState("home");
   const location = useLocation();
 
@@ -21,14 +21,18 @@ const Navbar = () => {
 
   return (
     <nav>
-      <img src="../../assets/shared/logo.svg" alt="" />
+      <img
+        src="../../assets/shared/logo.svg"
+        alt="Space tourism logo"
+        className="logo"
+      />
       <div>
         <div
           id="hamburger"
-          onClick={() => setHamburger(!openHambuger)}
+          onClick={() => setHamburger(!openHamburger)}
           style={{ cursor: "pointer" }}
         >
-          {openHambuger ? (
+          {openHamburger ? (
             <img
               src="../../assets/shared/icon-close.svg"
               alt="hamburger-close"
@@ -41,8 +45,8 @@ const Navbar = () => {
           )}
         </div>
         <ul
-          className={openHambuger ? "open" : "close"}
-          style={{ fontFamily: "Barlow Condensed", letterSpacing: "2.7px" }}
+          className={`${openHamburger ? "open" : "close"} nav-page`}
+          // style={{ fontFamily: "Barlow Condensed", letterSpacing: "2.7px" }}
         >
           <li>
             <NavLink
@@ -52,8 +56,8 @@ const Navbar = () => {
                 borderBottom: active === "home" ? "2px solid #fff" : "",
               }}
             >
-              <span>01</span>
-              Home
+              <span className="nav-page-code">00</span>
+              HOME
             </NavLink>
           </li>
           <li>
@@ -64,7 +68,7 @@ const Navbar = () => {
                 borderBottom: active === "destination" ? "2px solid #fff" : "",
               }}
             >
-              <span>02</span>Destination
+              <span className="nav-page-code">01</span>DESTINATION
             </NavLink>
           </li>
           <li>
@@ -75,7 +79,7 @@ const Navbar = () => {
                 borderBottom: active === "crew" ? "2px solid #fff" : "",
               }}
             >
-              <span>03</span>Crew
+              <span className="nav-page-code">02</span>CREW
             </NavLink>
           </li>
           <li>
@@ -86,7 +90,7 @@ const Navbar = () => {
                 borderBottom: active === "technology" ? "2px solid #fff" : "",
               }}
             >
-              <span>04</span>Technology
+              <span className="nav-page-code">03</span>TECHNOLOGY
             </NavLink>
           </li>
         </ul>
