@@ -16,22 +16,3 @@
 .carousel-slide-hidden {
   display: none;
 }
-span.indicators {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-}
-
-.indicator {
-  background-color: white;
-  height: 0.6rem;
-  width: 0.6rem;
-  border-radius: 100%;
-  border: none;
-  outline: none;
-}
-
-.indicator-inactive {
-  background-color: rgb(112, 111, 111);
-}
