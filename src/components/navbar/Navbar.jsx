@@ -44,10 +44,7 @@ const Navbar = () => {
             />
           )}
         </div>
-        <ul
-          className={`${openHamburger ? "open" : "close"} nav-page`}
-          // style={{ fontFamily: "Barlow Condensed", letterSpacing: "2.7px" }}
-        >
+        <ul className={`${openHamburger ? "open" : "close"} nav-page`}>
           <li>
             <NavLink
               to={"/"}

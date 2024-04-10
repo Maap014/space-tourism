@@ -120,6 +120,26 @@ body {
   background-image: url(/public/assets/crew/background-crew-mobile.jpg);
 }
 
+span.indicators {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.indicator {
+  background-color: white;
+  height: 0.6rem;
+  width: 0.6rem;
+  border-radius: 100%;
+  border: none;
+  outline: none;
+}
+
+.indicator-inactive {
+  background-color: rgb(112, 111, 111);
+}
+
 .crew-role,
 .crew-name {
   font-family: "Bellefair";
@@ -135,7 +155,8 @@ body {
   margin-bottom: 15px;
 }
 
-.crew-bio {
+.crew-bio,
+.travel-tech-description {
   font-family: "Barlow";
   font-size: 15px;
   font-weight: lighter;
@@ -148,4 +169,43 @@ body {
 .technology-bg {
   min-height: 100vh;
   background-image: url(/public/assets/technology/background-technology-mobile.jpg);
+}
+
+.tech-image {
+  width: 100%;
+  height: 170px;
+  margin: 1rem 0 1.5rem 0;
+}
+
+.tech-id,
+.tech-id-inactive {
+  background-color: white;
+  height: 40px;
+  width: 40px;
+  border-radius: 100%;
+  border: none;
+  outline: none;
+  margin-right: 10px;
+}
+
+.tech-id-inactive {
+  background-color: #0b0d170b;
+  color: #fff;
+  border: 1px solid #383b4b;
+}
+.travel-tech-terminology {
+  font-family: "Barlow Condensed";
+  letter-spacing: 2.36px;
+  color: #d0d6f9;
+  margin: 10px 0;
+  font-weight: normal;
+  font-size: 14px;
+}
+
+.travel-tech-name {
+  font-family: "Bellefair";
+  font-weight: normal;
+  font-size: 24px;
+  color: #d9d9d9;
+  margin-bottom: 10px;
 }
