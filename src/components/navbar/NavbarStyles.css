@@ -12,6 +12,10 @@ nav {
   height: 40px;
 }
 
+.nav-line-through {
+  display: none;
+}
+
 nav ul {
   display: none;
 }
@@ -61,28 +65,19 @@ li a > span {
   cursor: pointer;
 }
 
-@media (min-width: 376px) {
+@media (min-width: 568px) {
   #hamburger {
     display: none;
   }
-  /* .active::after {
-    content: "";
-    width: 70%;
-    height: 2px;
-    background-color: tomato;
-    position: absolute;
-    bottom: -4px;
-    left: 15px;
-  } */
 
   nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 15px;
-    position: sticky;
-    top: 0;
-    overflow: auto;
+    padding: 0;
+    margin-left: 3rem;
+  }
+
+  .logo {
+    width: 48px;
+    height: 48px;
   }
 
   nav ul {
@@ -90,5 +85,68 @@ li a > span {
     align-items: center;
     justify-content: center;
     background-color: rgba(26, 26, 43, 0.622);
+    gap: 1.5rem;
+    padding: 0 35px;
+  }
+
+  nav li {
+    padding: 2rem 0px;
+  }
+  nav li:nth-child(1) {
+    padding-left: 15px;
+  }
+
+  nav li a,
+  span {
+    padding: 2rem 0;
+  }
+
+  .nav-page-code {
+    display: none;
+  }
+}
+
+@media (min-width: 1440px) {
+  nav {
+    padding-top: 2rem;
+    position: relative;
+  }
+
+  .nav-line-con {
+    position: relative;
+    width: 100%;
+    display: grid;
+    place-items: center;
+  }
+
+  .nav-line-through {
+    display: block;
+    height: 1px;
+    width: 100%;
+    background-color: #979797;
+    margin-left: 4rem;
+    position: absolute;
+    z-index: 1;
+  }
+
+  nav li {
+    padding: 2.3rem 0px;
+  }
+
+  nav li a,
+  span {
+    padding: 2.3rem 0;
+  }
+
+  .nav-page {
+    justify-content: space-evenly;
+    width: 830px;
+    height: 92px;
+    backdrop-filter: blur(15px);
+    padding-right: 7rem;
+    padding-left: 3rem;
+  }
+  .nav-page-code {
+    display: inline;
   }
 }

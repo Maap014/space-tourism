@@ -16,7 +16,6 @@ body {
 .wrapper {
   margin: 0 auto;
   min-width: 320px;
-  max-width: 374px;
 }
 
 .mobile-bg-home,
@@ -33,6 +32,24 @@ body {
   padding: 0 10px;
 }
 
+.home-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.home-title {
+  font-size: 80px;
+  line-height: 100px;
+  color: rgb(255, 255, 255);
+  font-weight: normal;
+  font-family: "bellefair";
+}
+.home-page-paragraph {
+  font-family: "Barlow";
+  line-height: 25px;
+}
 .mobile-explore-btn {
   height: 140px;
   width: 140px;
@@ -208,4 +225,105 @@ span.indicators {
   font-size: 24px;
   color: #d9d9d9;
   margin-bottom: 10px;
+}
+
+@media (min-width: 428px) {
+  .mobile-bg-home,
+  .destination-bg,
+  .crew-bg,
+  .technology-bg {
+    min-height: 100vh;
+    background-image: url(/public/assets/home/background-home-tablet.jpg);
+    padding: 0;
+  }
+}
+
+@media (min-width: 568px) {
+  .home-wrapper {
+    margin: 4rem;
+  }
+}
+
+/* left tab screen */
+@media (min-width: 768px) {
+  /* home Page */
+
+  .mobile-bg-home,
+  .destination-bg,
+  .crew-bg,
+  .technology-bg {
+    min-height: 100vh;
+    background-image: url(/public/assets/home/background-home-tablet.jpg);
+    padding: 0;
+  }
+
+  .home-wrapper {
+    gap: 8rem;
+  }
+
+  .hero-section {
+    margin: 7rem 10rem 0;
+  }
+
+  .page-heading {
+    letter-spacing: 3.38px;
+    font-size: 20px;
+  }
+
+  .home-title {
+    font-size: 150px;
+    line-height: 150px;
+    color: rgb(255, 255, 255);
+    font-weight: normal;
+    font-family: bellefair;
+  }
+
+  .home-page-paragraph {
+    line-height: 28px;
+  }
+
+  .mobile-explore-btn {
+    height: 242px;
+    width: 242px;
+    font-size: 32px;
+    letter-spacing: 2px;
+  }
+}
+
+/* right big screen */
+@media (min-width: 1440px) {
+  /* home  Page*/
+  .mobile-bg-home,
+  .destination-bg,
+  .crew-bg,
+  .technology-bg {
+    min-height: 100vh;
+    background-image: url(/public/assets/home/background-home-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #d0d6f9;
+    text-align: center;
+  }
+
+  .home-wrapper {
+    flex-direction: row;
+    margin: 15rem 9rem;
+  }
+
+  .hero-section {
+    width: 450px;
+    height: 382px;
+    margin: 0;
+    text-align: justify;
+    display: grid;
+  }
+  .page-heading {
+    letter-spacing: 4.72px;
+    font-size: 28px;
+  }
+  .home-page-paragraph {
+    font-size: 18px;
+    line-height: 32px;
+  }
 }
