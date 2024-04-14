@@ -49,20 +49,18 @@ const Technology = () => {
           )}
           {technologyData?.technology.map((tech) => {
             return (
-              <>
-                {travelTech && (
-                  <button
-                    className={`${
-                      travelTech.id === tech.id ? "tech-id" : "tech-id-inactive"
-                    }`}
-                    key={tech}
-                    id={tech.name}
-                    onClick={() => handletechTravel(tech.id)}
-                  >
-                    {tech.id}
-                  </button>
-                )}
-              </>
+              <button
+                key={tech.id}
+                className={`${
+                  travelTech && travelTech.id === tech.id
+                    ? "tech-id"
+                    : "tech-id-inactive"
+                }`}
+                id={tech.id}
+                onClick={() => handletechTravel(tech.id)}
+              >
+                {tech.id}
+              </button>
             );
           })}
           {travelTech && (

@@ -26,6 +26,10 @@ const Navbar = () => {
         alt="Space tourism logo"
         className="logo"
       />
+      <div className="nav-line-con">
+        <div className="nav-line-through"></div>
+      </div>
+
       <div>
         <div
           id="hamburger"

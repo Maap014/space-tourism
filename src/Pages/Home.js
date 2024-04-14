@@ -6,42 +6,23 @@ const Home = () => {
     <div className="wrapper">
       <div className="mobile-bg-home">
         <Navbar />
-        <p
-          style={{
-            letterSpacing: "2.7px",
-            fontFamily: "Barlow Condensed",
-            marginBottom: "10px",
-          }}
-        >
-          SO, YOU WANT TO TRAVEL TO
-        </p>
-        <h1
-          style={{
-            fontSize: "80px",
-            lineHeight: "100px",
-            color: "#FFFFFF",
-            fontWeight: "normal",
-            fontFamily: "bellefair",
-          }}
-        >
-          SPACE
-        </h1>
+        <div className="home-wrapper">
+          <div className="hero-section">
+            <p className="page-heading">SO, YOU WANT TO TRAVEL TO</p>
+            <h1 className="home-title">SPACE</h1>
 
-        <p
-          style={{
-            fontFamily: "Barlow",
-            lineHeight: "25px",
-          }}
-        >
-          Let’s face it; if you want to go to space, you might as well genuinely
-          go to outer space and not hover kind of on the edge of it. Well sit
-          back, and relax because we’ll give you a truly out of this world
-          experience!
-        </p>
-        <div>
-          <NavLink to={"/destination"} className="mobile-explore-btn">
-            EXPLORE
-          </NavLink>
+            <p className="home-page-paragraph">
+              Let’s face it; if you want to go to space, you might as well
+              genuinely go to outer space and not hover kind of on the edge of
+              it. Well sit back, and relax because we’ll give you a truly out of
+              this world experience!
+            </p>
+          </div>
+          <div>
+            <NavLink to={"/destination"} className="mobile-explore-btn">
+              EXPLORE
+            </NavLink>
+          </div>
         </div>
       </div>
     </div>
