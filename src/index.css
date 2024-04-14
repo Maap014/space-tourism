@@ -90,6 +90,16 @@ body {
 .planet-image {
   width: 170px;
   height: 170px;
+  animation: spin 8s linear 100ms infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
 }
 
 .destination-names {
@@ -109,6 +119,10 @@ body {
   margin: 15px 0 10px;
 }
 
+.dest-content {
+  line-height: 25px;
+}
+
 .demaction-line {
   height: 1px;
   background-color: #383b4b;
@@ -116,7 +130,11 @@ body {
 }
 
 .distance-time-container {
-  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-direction: column;
 }
 
 .travel-distance-time {
@@ -127,7 +145,7 @@ body {
 }
 .travel-distance-time-value {
   font-size: 28px;
-  color: #fff;
+  color: #d9d9d9;
   font-family: "Bellefair";
 }
 
@@ -236,11 +254,20 @@ span.indicators {
     background-image: url(/public/assets/home/background-home-tablet.jpg);
     padding: 0;
   }
+
+  .destination-bg {
+    min-height: 100vh;
+    background-image: url(/public/assets/destination/background-destination-desktop.jpg);
+    padding: 0;
+  }
 }
 
 @media (min-width: 568px) {
   .home-wrapper {
     margin: 4rem;
+  }
+  .destination-page-container {
+    margin: 5rem;
   }
 }
 
@@ -288,6 +315,50 @@ span.indicators {
     font-size: 32px;
     letter-spacing: 2px;
   }
+
+  /* Destination page */
+  /* Tab */
+  .destination-bg {
+    min-height: 100vh;
+    background-image: url(/public/assets/destination/background-destination-tablet.jpg);
+    padding: 0;
+  }
+
+  .destination-page-container {
+    margin: 3rem;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  .page-heading {
+    text-align: left;
+    margin: 2rem 0 0 3rem;
+  }
+
+  .planet-image {
+    margin: 2rem;
+    width: 300px;
+    height: 300px;
+  }
+  .destination-names {
+    gap: 35px;
+  }
+  .active-dest-name {
+    font-size: 80px;
+    margin: 25px 0 15px;
+  }
+
+  .dest-content {
+    line-height: 28px;
+    padding: 0 68px;
+  }
+  .distance-time-container {
+    flex-direction: row;
+    gap: 7rem;
+  }
+
+  .travel-distance-time-value {
+    margin-top: 1rem;
+  }
 }
 
 /* right big screen */
@@ -325,5 +396,50 @@ span.indicators {
   .home-page-paragraph {
     font-size: 18px;
     line-height: 32px;
+  }
+
+  /* Destination page */
+  /* desktop*/
+  .destination-bg {
+    min-height: 100vh;
+    background-image: url(/public/assets/destination/background-destination-desktop.jpg);
+    padding: 0;
+  }
+
+  .destination-page-container {
+    margin: 6rem 8rem;
+    max-width: 1600px;
+    margin-inline: auto;
+  }
+
+  .destination-content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 8rem;
+    margin-top: 2rem;
+    text-align: left;
+  }
+
+  .planet-image {
+    width: 445px;
+    height: 445px;
+  }
+  .destination-sub-content {
+    width: 445px;
+    padding-right: 1rem;
+  }
+
+  .destination-names {
+    justify-content: flex-start;
+  }
+  .active-dest-name {
+    font-size: 100px;
+  }
+
+  .dest-content {
+    line-height: 32px;
+    font-size: 18px;
+    padding: 0;
   }
 }
