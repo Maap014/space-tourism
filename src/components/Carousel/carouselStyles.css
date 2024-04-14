@@ -16,3 +16,14 @@
 .carousel-slide-hidden {
   display: none;
 }
+
+@media (min-width: 768px) {
+  .carousel-slide {
+    height: 572px;
+  }
+}
+@media (min-width: 1440px) {
+  .carousel-slide {
+    height: 645px;
+  }
+}

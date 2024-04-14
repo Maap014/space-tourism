@@ -258,7 +258,11 @@ span.indicators {
   .destination-bg {
     min-height: 100vh;
     background-image: url(/public/assets/destination/background-destination-desktop.jpg);
-    padding: 0;
+  }
+
+  .crew-bg {
+    min-height: 100vh;
+    background-image: url(/public/assets/crew/background-crew-tablet.jpg);
   }
 }
 
@@ -268,6 +272,13 @@ span.indicators {
   }
   .destination-page-container {
     margin: 5rem;
+  }
+
+  .crew-container {
+    margin: 5rem;
+  }
+  .crew-content {
+    margin-top: 2rem;
   }
 }
 
@@ -334,6 +345,10 @@ span.indicators {
     margin: 2rem 0 0 3rem;
   }
 
+  .page-heading-id {
+    font-size: 20px;
+  }
+
   .planet-image {
     margin: 2rem;
     width: 300px;
@@ -358,6 +373,45 @@ span.indicators {
 
   .travel-distance-time-value {
     margin-top: 1rem;
+  }
+
+  /* Crew */
+  .crew-bg {
+    min-height: 100vh;
+    background-image: url(/public/assets/crew/background-crew-tablet.jpg);
+    padding: 0;
+  }
+
+  .crew-container {
+    margin: 0;
+  }
+
+  .crew-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+    margin: 4rem 4rem 0;
+  }
+
+  .crew-info {
+    display: flex;
+    flex-flow: column-reverse;
+  }
+
+  .crew-demaction-line {
+    display: none;
+  }
+
+  .crew-role {
+    font-size: 24px;
+  }
+  .crew-name {
+    font-size: 40px;
+  }
+  .crew-bio {
+    line-height: 28px;
+    max-width: 460px;
   }
 }
 
@@ -406,10 +460,18 @@ span.indicators {
     padding: 0;
   }
 
+  .page-heading {
+    margin: 2rem 0 0 0;
+  }
+
+  .page-heading-id {
+    font-size: 28px;
+  }
+
   .destination-page-container {
-    margin: 6rem 8rem;
+    margin: 6rem auto;
     max-width: 1600px;
-    margin-inline: auto;
+    padding: 0 8rem;
   }
 
   .destination-content {
@@ -441,5 +503,44 @@ span.indicators {
     line-height: 32px;
     font-size: 18px;
     padding: 0;
+  }
+
+  /* Crew */
+  .crew-bg {
+    min-height: 100vh;
+    background-image: url(/public/assets/crew/background-crew-desktop.jpg);
+    padding: 0;
+  }
+  .crew-container {
+    margin: 0;
+    margin: 6rem auto;
+    padding: 0 8rem;
+    max-width: 1600px;
+  }
+  .crew-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    margin: 0;
+  }
+  .crew-info {
+    text-align: left;
+    align-items: flex-start;
+  }
+  .crew-role {
+    font-size: 32px;
+  }
+  .crew-name {
+    font-size: 56px;
+  }
+  .crew-bio {
+    font-size: 18px;
+    line-height: 32px;
+    max-width: 460px;
+  }
+  .indicator {
+    width: 1rem;
+    height: 1rem;
   }
 }
