@@ -40,46 +40,49 @@ const Destination = () => {
     <div className="wrapper">
       <div className=" destination-bg">
         <Navbar />
-        <div>
+        <div className="destination-page-container">
           <p className="page-heading">
             <span className="page-heading-id">01</span>
             PICK YOUR DESTINATION
           </p>
-          {active && (
-            <div style={{ margin: "20px" }}>
-              <img
-                src={active.images.png}
-                alt={active.name}
-                className="planet-image"
-              />
-            </div>
-          )}
-        </div>
 
-        <div className="destination-content">
-          <div className="destination-names ">
-            {destinationsData?.destinations.map((destination) => (
-              <div
-                key={destination.id}
-                id={destination.name.toLocaleLowerCase()}
-                className="nav-link"
-                style={{
-                  borderBottom:
-                    active && active.id === destination.id
-                      ? "2px solid #fff"
-                      : "",
-                  color: active && active.id === destination.id ? "#fff" : "",
-                  height: "25px",
-                }}
-                onClick={() => {
-                  handleDestinationData(destination.id);
-                }}
-              >
-                {destination.name.toLocaleUpperCase()}
+          <div className="destination-content">
+            {active && (
+              <div style={{ margin: "20px" }}>
+                <img
+                  src={active.images.png}
+                  alt={active.name}
+                  className="planet-image"
+                />
               </div>
-            ))}
+            )}
+            <div className="destination-sub-content">
+              <div className="destination-names">
+                {destinationsData?.destinations.map((destination) => (
+                  <div
+                    key={destination.id}
+                    id={destination.name.toLocaleLowerCase()}
+                    className="nav-link"
+                    style={{
+                      borderBottom:
+                        active && active.id === destination.id
+                          ? "2px solid #fff"
+                          : "",
+                      color:
+                        active && active.id === destination.id ? "#fff" : "",
+                      height: "25px",
+                    }}
+                    onClick={() => {
+                      handleDestinationData(destination.id);
+                    }}
+                  >
+                    {destination.name.toLocaleUpperCase()}
+                  </div>
+                ))}
+              </div>
+              {active && <DestinationData planetData={active} />}
+            </div>
           </div>
-          {active && <DestinationData planetData={active} />}
         </div>
       </div>
     </div>
