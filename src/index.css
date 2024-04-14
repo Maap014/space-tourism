@@ -214,6 +214,7 @@ span.indicators {
 
 .tech-id,
 .tech-id-inactive {
+  font-family: "Bellefair";
   background-color: white;
   height: 40px;
   width: 40px;
@@ -264,6 +265,11 @@ span.indicators {
     min-height: 100vh;
     background-image: url(/public/assets/crew/background-crew-tablet.jpg);
   }
+
+  .technology-bg {
+    min-height: 100vh;
+    background-image: url(/public/assets/technology/background-technology-tablet.jpg);
+  }
 }
 
 @media (min-width: 568px) {
@@ -280,6 +286,12 @@ span.indicators {
   .crew-content {
     margin-top: 2rem;
   }
+
+  .tech-page-conatiner {
+    margin-top: 5rem;
+  }
+
+  /* Technology tab */
 }
 
 /* left tab screen */
@@ -413,6 +425,57 @@ span.indicators {
     line-height: 28px;
     max-width: 460px;
   }
+
+  /* Technology tab */
+
+  .technology-bg {
+    min-height: 100vh;
+    background-image: url(/public/assets/technology/background-technology-tablet.jpg);
+  }
+
+  .tech-page-conatiner {
+    margin-top: 0;
+  }
+
+  .tech-container {
+    margin-inline: auto;
+    max-width: 900px;
+  }
+
+  .tech-image {
+    margin: 3rem 0;
+    height: 310px;
+  }
+
+  .tech-id,
+  .tech-id-inactive {
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+  }
+
+  .tech-details {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 3rem 0 0;
+  }
+
+  .travel-tech-terminology {
+    font-size: 16px;
+    letter-spacing: 2.7px;
+  }
+
+  .travel-tech-name {
+    font-size: 40px;
+  }
+
+  .travel-tech-description {
+    font-size: 16px;
+    line-height: 28px;
+    max-width: 452px;
+  }
 }
 
 /* right big screen */
@@ -542,5 +605,62 @@ span.indicators {
   .indicator {
     width: 1rem;
     height: 1rem;
+  }
+
+  /* Technology */
+  .technology-bg {
+    min-height: 100vh;
+    background-image: url(/public/assets/technology/background-technology-desktop.jpg);
+  }
+
+  .tech-page-conatiner {
+    padding-left: 8rem;
+    max-width: 1600px;
+  }
+
+  .tech-container {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    max-width: inherit;
+  }
+
+  .tech-image {
+    width: 515px;
+    height: 527px;
+  }
+
+  .tech-id,
+  .tech-id-inactive {
+    width: 80px;
+    height: 80px;
+    font-size: 24px;
+  }
+  .tech-id-and-content-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .tech-id-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .tech-details {
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .travel-tech-name {
+    font-size: 56px;
+  }
+
+  .travel-tech-description {
+    font-size: 18px;
+    line-height: 32px;
   }
 }
