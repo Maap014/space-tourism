@@ -3,6 +3,8 @@
 This is my first react project
 
 RESOLUTIONS
+#### MOBILE 
+- 375 X 667
 #### TAB VIEW
 - 768 X 1024
 #### DESKTOP VIEW
