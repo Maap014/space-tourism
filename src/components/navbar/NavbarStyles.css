@@ -63,6 +63,7 @@ li a > span {
 .nav-link:hover {
   border-bottom: 2px solid #fff;
   cursor: pointer;
+  transition: 150ms ease-in-out;
 }
 
 @media (min-width: 568px) {

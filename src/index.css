@@ -164,15 +164,19 @@ span.indicators {
 
 .indicator {
   background-color: white;
-  height: 0.6rem;
-  width: 0.6rem;
+  height: 0.8rem;
+  width: 0.8rem;
   border-radius: 100%;
   border: none;
   outline: none;
+  cursor: pointer;
+  transition: 350ms ease;
 }
 
 .indicator-inactive {
   background-color: rgb(112, 111, 111);
+  height: 0.6rem;
+  width: 0.6rem;
 }
 
 .crew-role,
@@ -222,6 +226,8 @@ span.indicators {
   border: none;
   outline: none;
   margin-right: 10px;
+  cursor: pointer;
+  transition: 450ms ease-in-out;
 }
 
 .tech-id-inactive {
@@ -229,6 +235,12 @@ span.indicators {
   color: #fff;
   border: 1px solid #383b4b;
 }
+.tech-id-inactive:hover {
+  /* border: 2px solid #383b4b; */
+  box-shadow: 0px 0px 10px #373a47;
+  transition: 150ms ease;
+}
+
 .travel-tech-terminology {
   font-family: "Barlow Condensed";
   letter-spacing: 2.36px;
@@ -443,7 +455,7 @@ span.indicators {
   }
 
   .tech-image {
-    margin: 3rem 0;
+    margin: 1rem 0;
     height: 310px;
   }
 
@@ -532,7 +544,7 @@ span.indicators {
   }
 
   .destination-page-container {
-    margin: 6rem auto;
+    margin: 3rem auto 0;
     max-width: 1600px;
     padding: 0 8rem;
   }
@@ -547,8 +559,8 @@ span.indicators {
   }
 
   .planet-image {
-    width: 445px;
-    height: 445px;
+    width: 400px;
+    height: 400px;
   }
   .destination-sub-content {
     width: 445px;
