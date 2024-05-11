@@ -23,7 +23,10 @@
   }
 }
 @media (min-width: 1440px) {
+  .Carousel {
+    justify-content: flex-end;
+  }
   .carousel-slide {
-    height: 645px;
+    height: 550px;
   }
 }

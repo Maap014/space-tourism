@@ -19,6 +19,7 @@ const Carousel = ({ slide }) => {
             />
           );
         })}
+        <div className="crew-demaction-line" style={{ margin: "0px" }}></div>
       </div>
     </div>
   );
