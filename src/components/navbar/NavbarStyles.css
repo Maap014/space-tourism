@@ -5,6 +5,7 @@ nav {
   padding: 15px;
   position: sticky;
   top: 0;
+  z-index: 1;
 }
 
 .logo {
@@ -20,7 +21,56 @@ nav ul {
   display: none;
 }
 
-nav ul.open {
+.open,
+.close {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  background-color: rgba(26, 26, 43, 0);
+  backdrop-filter: blur(35px);
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  height: 100vh;
+  padding: 5rem 1rem 0;
+  width: 254px;
+  transition: 900ms ease, opacity 900ms ease, visibility 900ms ease;
+  z-index: -1;
+}
+
+.open {
+  visibility: visible;
+  opacity: 1;
+  animation: menuOpen 900ms;
+}
+
+@keyframes menuOpen {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.close {
+  visibility: hidden;
+  opacity: 0;
+  transform: translateX(100%);
+  animation: menuClose 900ms;
+}
+
+@keyframes menuClose {
+  0% {
+    transform: translateX(-0%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+/* nav ul.open {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -33,9 +83,8 @@ nav ul.open {
   width: 254px;
   height: 100vh;
   padding: 5rem 1rem 0;
-
   z-index: -1;
-}
+} */
 
 nav li {
   list-style: none;
@@ -81,14 +130,41 @@ li a > span {
     height: 48px;
   }
 
-  nav ul {
+  nav ul.close {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: row;
+    transform: translateX(0%);
+    visibility: visible;
+    opacity: 1;
+    height: 90px;
+    width: 100%;
     background-color: rgba(26, 26, 43, 0.622);
     gap: 1.5rem;
     padding: 0 35px;
+    position: relative;
+    transition: none;
+    z-index: 1;
+    animation: none;
   }
+
+  /* .open {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background-color: rgba(26, 26, 43, 0);
+    backdrop-filter: blur(35px);
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    height: 100vh;
+    padding: 5rem 1rem 0;
+    width: 254px;
+    transition: 900ms ease, opacity 900ms ease, visibility 900ms ease;
+    z-index: -1;
+  } */
 
   nav li {
     padding: 2rem 0px;
@@ -127,7 +203,7 @@ li a > span {
     background-color: #979797;
     margin-left: 4rem;
     position: absolute;
-    z-index: 1;
+    z-index: 2;
   }
 
   nav li {
