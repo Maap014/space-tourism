@@ -39,6 +39,13 @@ body {
   flex-direction: column;
 }
 
+.home-wrapper,
+.destination-page-container,
+.crew-container,
+.tech-page-conatiner {
+  margin: 2rem auto 0;
+}
+
 .home-title {
   font-size: 80px;
   line-height: 100px;
@@ -152,6 +159,8 @@ body {
   justify-content: center;
   gap: 20px;
   flex-direction: column;
+  margin: 1rem 0;
+  padding-bottom: 1.5rem;
 }
 
 .travel-distance-time {
