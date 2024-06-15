@@ -70,22 +70,6 @@ nav ul {
   }
 }
 
-/* nav ul.open {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  background-color: rgba(26, 26, 43, 0);
-  backdrop-filter: blur(35px);
-  position: fixed;
-  top: 0px;
-  right: 0px;
-  width: 254px;
-  height: 100vh;
-  padding: 5rem 1rem 0;
-  z-index: -1;
-} */
-
 nav li {
   list-style: none;
   padding: 15px;
@@ -148,23 +132,6 @@ li a > span {
     z-index: 1;
     animation: none;
   }
-
-  /* .open {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    background-color: rgba(26, 26, 43, 0);
-    backdrop-filter: blur(35px);
-    position: fixed;
-    top: 0px;
-    right: 0px;
-    height: 100vh;
-    padding: 5rem 1rem 0;
-    width: 254px;
-    transition: 900ms ease, opacity 900ms ease, visibility 900ms ease;
-    z-index: -1;
-  } */
 
   nav li {
     padding: 2rem 0px;
