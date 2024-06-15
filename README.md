@@ -2,14 +2,6 @@
 ## BUILT WITH REACT JS
 This is my first react project
 
-RESOLUTIONS
-#### MOBILE 
-- 375 X 667
-#### TAB VIEW
-- 768 X 1024
-#### DESKTOP VIEW
-- 1440 X 900
-
 ### The challenge
 The Destination page was challenging, changing states, using effects, costume hooks, and being dynamic, but after a couple of tutorial videos and some docs and help I got from my mentor Achugo Ebuka. I was able to pass the stage,
 
