@@ -10,7 +10,6 @@
 /* mobile */
 body {
   margin: 0;
-  height: 100vh;
 }
 
 .wrapper {
@@ -26,7 +25,6 @@ body {
   background-image: url(/public/assets/home/background-home-mobile.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
   color: #d0d6f9;
   text-align: center;
   padding: 0 10px;
@@ -94,7 +92,6 @@ body {
 }
 
 .destination-bg {
-  min-height: 100vh;
   background-image: url(/public/assets/destination/background-destination-mobile.jpg);
 }
 .page-heading-id {
@@ -159,7 +156,6 @@ body {
   justify-content: center;
   gap: 20px;
   flex-direction: column;
-  margin: 1rem 0;
   padding-bottom: 1.5rem;
 }
 
@@ -529,6 +525,7 @@ span.indicators {
   .destination-bg,
   .crew-bg,
   .technology-bg {
+    border: 2px solid red;
     min-height: 100vh;
     background-image: url(/public/assets/home/background-home-desktop.jpg);
     background-repeat: no-repeat;
