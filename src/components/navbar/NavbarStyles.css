@@ -35,39 +35,19 @@ nav ul {
   height: 100vh;
   padding: 5rem 1rem 0;
   width: 254px;
-  transition: 900ms ease, opacity 900ms ease, visibility 900ms ease;
   z-index: -1;
 }
 
 .open {
   visibility: visible;
   opacity: 1;
-  animation: menuOpen 900ms;
-}
-
-@keyframes menuOpen {
-  0% {
-    transform: translateX(100%);
-  }
-  100% {
-    transform: translateX(0%);
-  }
+  transform: translateX(0%);
 }
 
 .close {
   visibility: hidden;
   opacity: 0;
   transform: translateX(100%);
-  animation: menuClose 900ms;
-}
-
-@keyframes menuClose {
-  0% {
-    transform: translateX(-0%);
-  }
-  100% {
-    transform: translateX(100%);
-  }
 }
 
 nav li {
@@ -131,6 +111,9 @@ li a > span {
     transition: none;
     z-index: 1;
     animation: none;
+  }
+
+  nav ul.nav-page {
   }
 
   nav li {
