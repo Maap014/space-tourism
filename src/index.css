@@ -70,7 +70,6 @@ body {
   place-content: center;
   text-decoration: none;
   animation: pulsulate 4s infinite;
-  transition: 3s ease-in-out;
 }
 
 @keyframes pulsulate {

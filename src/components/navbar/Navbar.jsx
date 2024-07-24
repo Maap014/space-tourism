@@ -17,7 +17,7 @@ const Navbar = () => {
     } else if (location.pathname.includes("technology")) {
       setActive("technology");
     }
-  }, []);
+  }, [location.pathname]);
 
   return (
     <nav>
