@@ -12,7 +12,7 @@ const Crew = () => {
       <div className="crew-bg">
         <Navbar />
         <div className="crew-container">
-          {!isLoading ? (
+          {isLoading ? (
             <div
               style={{
                 width: "100%",
