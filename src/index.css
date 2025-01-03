@@ -235,6 +235,11 @@ span.indicators {
   color: #d0d6f9;
 }
 
+.bg-loading {
+  background-color: #f0f0f0; /* Light gray placeholder */
+  transition: background-color 0.3s ease;
+}
+
 /* Technology */
 
 .technology-bg {
@@ -713,5 +718,26 @@ span.indicators {
   .travel-tech-description {
     font-size: 18px;
     line-height: 32px;
+  }
+}
+.spinner {
+  height: 90px;
+  width: 90px;
+  opacity: 25%;
+  animation: spin 1s linear infinite;
+}
+
+@media (max-width: 1030px) {
+  .spinner {
+    height: 50px;
+    width: 50px;
+    opacity: 50%;
+    animation: spin 1s linear infinite;
+  }
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
   }
 }
